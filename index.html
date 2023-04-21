@@ -1,0 +1,232 @@
+<!-- 
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Vu Tuan Linh
+ID: s3927502
+Acknowledgement: 
+  - Color and Design Inspiration: https://www.goodreads.com/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a href="" class="logo-and-title">
+        <img class="logo" src="images/logo.png" alt="logo" />
+        <h2 class="header-title">GoodBooks</h2>
+      </a>
+      <nav class="header-nav">
+        <a href="category.html" class="header-nav-item">Fiction</a>
+        <a href="category.html" class="header-nav-item">Non-Fiction</a>
+        <a href="category.html" class="header-nav-item">Textbooks</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Banner (contains video) -->
+      <section id="banner">
+        <div class="banner-left">
+          <h1 class="banner-title">Today a reader, tomorrow a leader.</h1>
+        </div>
+
+        <div class="banner-right">
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/6ibCtsHgz3Y"
+              title="How books can open your mind | Lisa Bu"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              class="video-frame"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section id="books-listing">
+        <!-- Fiction -->
+        <div class="books-row-container">
+          <div class="books-row-title-container">
+            <a href="category.html" class="books-row-title">Fiction</a>
+          </div>
+
+          <div class="books-row">
+            <a href="book.html" class="books-row-item">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1343851908i/13538552._SX600_.jpg"
+                class="books-row-item-img"
+              />
+              <p class="books-row-item-name">Memoirs of an Imaginary Friend</p>
+              <p class="books-row-item-author">Matthew Dicks</p>
+            </a>
+            <a href="book.html" class="books-row-item">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1554610186i/43263472._SX600_.jpg"
+                class="books-row-item-img"
+              />
+              <p class="books-row-item-name">Twenty-one Truths About Love</p>
+              <p class="books-row-item-author">Matthew Dicks</p>
+            </a>
+            <a href="book.html" class="books-row-item">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1679597744i/123554934._SX600_.jpg"
+                class="books-row-item-img"
+              />
+              <p class="books-row-item-name">
+                Escape: Stories About Breaking Free
+              </p>
+              <p class="books-row-item-author">Jeremy A Kredlo</p>
+            </a>
+            <a href="book.html" class="books-row-item">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1681662384i/134028526._SX600_.jpg"
+                class="books-row-item-img"
+              />
+              <p class="books-row-item-name">Slab Vol. 1: The Doctor is In</p>
+              <p class="books-row-item-author">Bill Jemas</p>
+            </a>
+            <a href="book.html" class="books-row-item">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1681187696i/128134483._SX600_.jpg"
+                class="books-row-item-img"
+              />
+              <p class="books-row-item-name">Slab #3</p>
+              <p class="books-row-item-author">Bill Jemas</p>
+            </a>
+          </div>
+          <hr class="books-row-divider" />
+        </div>
+
+        <!-- Non-Fiction -->
+        <div class="books-row-container">
+          <div class="books-row-title-container">
+            <a href="category.html" class="books-row-title">Non-Fiction</a>
+          </div>
+          <div class="books-row">
+            <a href="book.html" class="books-row-item">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1595674533i/23692271.jpg"
+                class="books-row-item-img"
+              />
+              <p class="books-row-item-name">
+                Sapiens: A Brief History of Humankind
+              </p>
+              <p class="books-row-item-author">Yuval Noah Harari</p>
+            </a>
+            <a href="book.html" class="books-row-item">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1511288482i/11084145.jpg"
+                class="books-row-item-img"
+              />
+              <p class="books-row-item-name">Steve Jobs</p>
+              <p class="books-row-item-author">Walter Isaacson</p>
+            </a>
+            <a href="book.html" class="books-row-item">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1442726934i/4865.jpg"
+                class="books-row-item-img"
+              />
+              <p class="books-row-item-name">
+                How to Win Friends and Influence People
+              </p>
+              <p class="books-row-item-author">Dale Carnegie</p>
+            </a>
+            <a href="book.html" class="books-row-item">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1442957271i/368593.jpg"
+                class="books-row-item-img"
+              />
+              <p class="books-row-item-name">The 4-Hour Workweek</p>
+              <p class="books-row-item-author">Timothy Ferriss</p>
+            </a>
+            <a href="book.html" class="books-row-item">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1440528321i/36071.jpg"
+                class="books-row-item-img"
+              />
+              <p class="books-row-item-name">First Things First</p>
+              <p class="books-row-item-author">Stephen R. Covey</p>
+            </a>
+          </div>
+          <hr class="books-row-divider" />
+        </div>
+
+        <!-- Textbooks -->
+        <div class="books-row-container">
+          <div class="books-row-title-container">
+            <a href="category.html" class="books-row-title">Textbooks</a>
+          </div>
+          <div class="books-row">
+            <a href="book.html" class="books-row-item">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1575009552i/18693655.jpg"
+                class="books-row-item-img"
+              />
+              <p class="books-row-item-name">
+                A Mind for Numbers: How to Excel at Math and Science
+              </p>
+              <p class="books-row-item-author">Barbara Oakley</p>
+            </a>
+            <a href="book.html" class="books-row-item">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1361208630i/253203.jpg"
+                class="books-row-item-img"
+              />
+              <p class="books-row-item-name">
+                How to Become a Straight-A Student
+              </p>
+              <p class="books-row-item-author">Cal Newport</p>
+            </a>
+            <a href="book.html" class="books-row-item">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1310993739i/567610.jpg"
+                class="books-row-item-img"
+              />
+              <p class="books-row-item-name">
+                How to Read a Book: The Classic Guide to Intelligent Reading
+              </p>
+              <p class="books-row-item-author">
+                Mortimer J. Adler , Charles Van Doren
+              </p>
+            </a>
+            <a href="book.html" class="books-row-item">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1488937626i/34507927.jpg"
+                class="books-row-item-img"
+              />
+              <p class="books-row-item-name">How to Take Smart Notes</p>
+              <p class="books-row-item-author">Sönke Ah</p>
+            </a>
+            <a href="book.html" class="books-row-item">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1625372113i/58482658.jpg"
+                class="books-row-item-img"
+              />
+              <p class="books-row-item-name">Write Useful Books</p>
+              <p class="books-row-item-author">Rob Fitzpatrick, Adan</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <a href="#" class="footer-item">About Us</a>
+      <a href="#" class="footer-item">Privacy Policy</a>
+      <a href="#" class="footer-item">Terms</a>
+      <a href="#" class="footer-item">Copyright</a>
+      <a href="contact.html" class="footer-item">Contact Us</a>
+    </footer>
+  </body>
+</html>

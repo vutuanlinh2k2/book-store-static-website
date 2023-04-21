@@ -1,0 +1,157 @@
+<!-- 
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Vu Tuan Linh
+ID: s3927502
+Acknowledgement: 
+  - Color and Design Inspiration: https://www.goodreads.com/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a href="index.html" class="logo-and-title">
+        <img class="logo" src="images/logo.png" alt="logo" />
+        <h2 class="header-title">GoodBooks</h2>
+      </a>
+      <nav class="header-nav">
+        <a href="category.html" class="header-nav-item">Fiction</a>
+        <a href="category.html" class="header-nav-item">Non-Fiction</a>
+        <a href="category.html" class="header-nav-item">Textbooks</a>
+      </nav>
+    </header>
+
+    <main id="contact-main">
+      <!-- Form -->
+      <form class="contact">
+        <h2 class="contact-title">Contact Us</h2>
+        <div class="contact-input-list">
+          <div class="contact-input-line">
+            <label for="contact-purpose">Contact Purpose</label>
+
+            <select id="contact-purpose" name="contact-purpose">
+              <option value="sell">I want to sell books</option>
+              <option value="buy">I want to buy books</option>
+            </select>
+          </div>
+
+          <div class="contact-input-line">
+            <label for="contact-name">Name</label>
+            <input
+              id="contact-name"
+              name="contact-name"
+              type="text"
+              placeholder="Enter your name"
+            />
+          </div>
+
+          <div class="contact-input-line">
+            <label for="contact-email">Email</label>
+            <input
+              id="contact-email"
+              name="contact-email"
+              type="text"
+              placeholder="Enter your email"
+            />
+          </div>
+
+          <div class="contact-input-line">
+            <label for="contact-phone-number">Phone number</label>
+            <input
+              id="contact-phone-number"
+              name="contact-phone-number"
+              type="text"
+              placeholder="Enter your phone number"
+            />
+          </div>
+
+          <div class="contact-input-line">
+            <label for="contact-preference">Contact Preference</label>
+            <div class="contact-input-checkbox-or-radio">
+              <div class="contact-input-checkbox-or-radio-item">
+                <input
+                  id="contact-by-email"
+                  name="preference"
+                  type="checkbox"
+                  value="contact-by-email"
+                />
+                <label for="contact-by-email">By Email</label>
+              </div>
+              <div class="contact-input-checkbox-or-radio-item">
+                <input
+                  id="contact-by-phone"
+                  name="preference"
+                  type="checkbox"
+                  value="contact-by-phone"
+                />
+                <label for="contact-by-phone">By Phone</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-input-line">
+            <label for="newsletter"> Receive weekly newsletter? </label>
+            <div class="contact-input-checkbox-or-radio">
+              <div class="contact-input-checkbox-or-radio-item">
+                <input
+                  id="newsletter-yes"
+                  name="newsletter"
+                  type="radio"
+                  value="newsletter-yes"
+                />
+                <label for="newsletter-yes">Yes</label>
+              </div>
+              <div class="contact-input-checkbox-or-radio-item">
+                <input
+                  id="newsletter-no"
+                  name="newsletter"
+                  type="radio"
+                  value="newsletter-no"
+                />
+                <label for="newsletter-no">No</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-input-line">
+            <label for="extra-note">Extra Note?</label>
+            <textarea
+              id="contact-extra-note"
+              name="extra-note"
+              type="text"
+              placeholder="Enter extra note"
+            ></textarea>
+          </div>
+        </div>
+        <div class="contact-buttons">
+          <button id="contact-reset" class="contact-button reset-button">
+            Reset
+          </button>
+          <button id="contact-submit" class="contact-button submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <a href="#" class="footer-item">About Us</a>
+      <a href="#" class="footer-item">Privacy Policy</a>
+      <a href="#" class="footer-item">Terms</a>
+      <a href="#" class="footer-item">Copyright</a>
+      <a href="contact.html" class="footer-item">Contact Us</a>
+    </footer>
+  </body>
+</html>
