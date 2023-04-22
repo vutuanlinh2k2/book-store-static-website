@@ -1,0 +1,109 @@
+<!-- 
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Vu Tuan Linh
+ID: s3927502
+Acknowledgement: 
+  - Color and Design Inspiration: https://www.goodreads.com/
+  - Book Description: https://www.goodreads.com/book/show/23692271-sapiens
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book 2 Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo-and-title">
+        <img class="logo" src="images/logo.png" alt="logo" />
+        <h2 class="header-title">GoodBooks</h2>
+      </div>
+      <nav class="header-nav">
+        <a href="index.html" class="header-nav-item">Home</a>
+        <a href="fiction.html" class="header-nav-item">Fiction</a>
+        <a href="non-fiction.html" class="header-nav-item">Non-Fiction</a>
+      </nav>
+    </header>
+
+    <main id="book-detail">
+      <!-- Breadcrumb -->
+      <div class="breadcrumb">
+        <a href="/index.html">Home</a>
+        <p>></p>
+        <a href="/fiction.html">Fiction</a>
+        <p>></p>
+        <a href="#">Presumed Innocent</a>
+      </div>
+
+      <div class="book-img-and-basic-info">
+        <!-- Book Images -->
+        <div class="book-img-container">
+          <img
+            class="book-big-img"
+            src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1551739783i/425029.jpg"
+            alt="book-main-img"
+          />
+          <div class="book-small-img-container">
+            <img
+              class="book-small-img"
+              src="https://m.media-amazon.com/images/I/91+aXUqgwGL._AC_UF894,1000_QL80_.jpg"
+              alt="book-small-img-1"
+            />
+            <img
+              class="book-small-img"
+              src="https://i.ebayimg.com/images/g/aQwAAOSw1g9iDqLs/s-l1600.jpg"
+              alt="book-small-img-2"
+            />
+            <img
+              class="book-small-img"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_wtDjuwC3KAca97Bn4sGG7C5F_Uvnm-yYVQ&usqp=CAU"
+              alt="book-small-img-3"
+            />
+          </div>
+        </div>
+
+        <!-- Basic Info (contains price and Add To Cart button) -->
+        <div class="book-basic-info">
+          <h2 class="book-basic-info-name">Presumed Innocent</h2>
+          <h3 class="book-basic-info-author"><span>by</span>Scott Turow</h3>
+          <h2 class="book-basic-info-price">$26.99</h2>
+          <button class="add-to-cart-button">Add To Cart</button>
+        </div>
+      </div>
+
+      <!-- Book Description -->
+      <div class="book-description-container">
+        <h3 class="book-description-title">Presumed Innocent</h3>
+        <p class="book-description">
+          Hailed as the most suspenseful and compelling novel in decades.
+          Presumed Innocent brings to life our worst nightmare: that of an
+          ordinary citizen facing conviction for the most terrible of all
+          crimes. It's the stunning portrayal of one man's all-too-human,
+          all-consuming fatal attraction for a passionate woman who is not his
+          wife, and the story of how his obsession puts everything he loves and
+          values on trial—including his own life. It's a book that lays bare a
+          shocking world of betrayal and murder, as well as the hidden depths of
+          the human heart. And it will hold you and haunt you ... long after you
+          have reached its shattering conclusion.
+        </p>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <a href="#" class="footer-item">About Us</a>
+      <a href="#" class="footer-item">Privacy Policy</a>
+      <a href="#" class="footer-item">Terms</a>
+      <a href="#" class="footer-item">Copyright</a>
+      <a href="contact.html" class="footer-item">Contact Us</a>
+    </footer>
+  </body>
+</html>
