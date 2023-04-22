@@ -123,6 +123,10 @@ header {
   margin: auto 0;
 }
 
+.video-container iframe {
+  border: none;
+}
+
 .video-frame {
   position: absolute;
   top: 0;
@@ -179,6 +183,7 @@ header {
 }
 
 .books-row-title-container {
+  font-weight: 400;
   text-align: center;
   margin-bottom: 30px;
 }
