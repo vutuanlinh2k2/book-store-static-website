@@ -484,6 +484,12 @@ footer {
   line-height: 1.5;
 }
 
+.contact-asterisk {
+  color: red;
+  font-size: 12px;
+  margin-left: 3px;
+}
+
 .contact-input-line > select,
 input,
 textarea,

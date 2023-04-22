@@ -37,47 +37,69 @@ Acknowledgement:
       <form class="contact">
         <h2 class="contact-title">Contact Us</h2>
         <div class="contact-input-list">
+          <!-- Contact Purpose -->
           <div class="contact-input-line">
-            <label for="contact-purpose">Contact Purpose</label>
-
+            <label for="contact-purpose">
+              Contact Purpose
+              <span class="contact-asterisk">*</span>
+            </label>
             <select id="contact-purpose" name="contact-purpose">
               <option value="sell">I want to sell books</option>
               <option value="buy">I want to buy books</option>
             </select>
           </div>
 
+          <!-- Name -->
           <div class="contact-input-line">
-            <label for="contact-name">Name</label>
+            <label for="contact-name">
+              Name
+              <span class="contact-asterisk">*</span>
+            </label>
             <input
               id="contact-name"
               name="contact-name"
               type="text"
               placeholder="Enter your name"
+              required
             />
           </div>
 
+          <!-- Email -->
           <div class="contact-input-line">
-            <label for="contact-email">Email</label>
+            <label for="contact-email">
+              Email
+              <span class="contact-asterisk">*</span>
+            </label>
             <input
               id="contact-email"
               name="contact-email"
               type="text"
               placeholder="Enter your email"
+              required
             />
           </div>
 
+          <!-- Phone Number -->
           <div class="contact-input-line">
-            <label for="contact-phone-number">Phone number</label>
+            <label for="contact-phone-number">
+              Phone number
+              <span class="contact-asterisk">*</span>
+            </label>
             <input
               id="contact-phone-number"
               name="contact-phone-number"
               type="text"
               placeholder="Enter your phone number"
+              required
             />
           </div>
 
+          <!-- Contact Preference -->
           <div class="contact-input-line">
-            <label for="contact-preference">Contact Preference</label>
+            <label for="contact-preference">
+              Contact Preference
+              <span class="contact-asterisk">*</span>
+            </label>
             <div class="contact-input-checkbox-or-radio">
               <div class="contact-input-checkbox-or-radio-item">
                 <input
@@ -85,6 +107,7 @@ Acknowledgement:
                   name="preference"
                   type="checkbox"
                   value="contact-by-email"
+                  required
                 />
                 <label for="contact-by-email">By Email</label>
               </div>
@@ -94,14 +117,19 @@ Acknowledgement:
                   name="preference"
                   type="checkbox"
                   value="contact-by-phone"
+                  required
                 />
                 <label for="contact-by-phone">By Phone</label>
               </div>
             </div>
           </div>
 
+          <!-- Newsletter -->
           <div class="contact-input-line">
-            <label for="newsletter"> Receive weekly newsletter? </label>
+            <label for="newsletter">
+              Receive weekly newsletter?
+              <span class="contact-asterisk">*</span>
+            </label>
             <div class="contact-input-checkbox-or-radio">
               <div class="contact-input-checkbox-or-radio-item">
                 <input
@@ -109,6 +137,7 @@ Acknowledgement:
                   name="newsletter"
                   type="radio"
                   value="newsletter-yes"
+                  required
                 />
                 <label for="newsletter-yes">Yes</label>
               </div>
@@ -118,14 +147,16 @@ Acknowledgement:
                   name="newsletter"
                   type="radio"
                   value="newsletter-no"
+                  required
                 />
                 <label for="newsletter-no">No</label>
               </div>
             </div>
           </div>
 
+          <!-- Extra Note -->
           <div class="contact-input-line">
-            <label for="extra-note">Extra Note?</label>
+            <label for="extra-note">Extra Note</label>
             <textarea
               id="contact-extra-note"
               name="extra-note"
@@ -135,10 +166,18 @@ Acknowledgement:
           </div>
         </div>
         <div class="contact-buttons">
-          <button id="contact-reset" class="contact-button reset-button">
+          <button
+            type="reset"
+            id="contact-reset"
+            class="contact-button reset-button"
+          >
             Reset
           </button>
-          <button id="contact-submit" class="contact-button submit-button">
+          <button
+            type="submit"
+            id="contact-submit"
+            class="contact-button submit-button"
+          >
             Submit
           </button>
         </div>
